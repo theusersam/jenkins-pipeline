@@ -23,5 +23,10 @@ pipeline {
                 echo 'deployment'
             }
         }
+          stage('Final deployment') {
+            steps {
+                echo 'deployment on all production servers'
+            }
+        }
     }
 }
